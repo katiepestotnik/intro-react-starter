@@ -3,7 +3,7 @@ import Card from './components/Card'
 import cardsArr from './cardData'
 import './styles.css'
 const cards = cardsArr.map((ele, idx) => {
-  return <Card title={ele.title} text={ele.text} img={ele.img} url={ele.url} key={idx} />
+  return <Card {...ele} key={idx} />
 })
 export default function App() {
   return (

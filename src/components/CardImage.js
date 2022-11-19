@@ -1,9 +1,9 @@
-const CardImage = (props) => {
+const CardImage = ({img, title}) => {
     return (
         <img
-        src={props.img}
+        src={img}
         className="card-img-top"
-        alt={props.title}
+        alt={title}
           />
     )
 }

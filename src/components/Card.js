@@ -1,13 +1,13 @@
 import CardBody from "./CardBody";
 import CardImage from "./CardImage";
-const Card = (props) => {
+const Card = ({title, text, url, img}) => {
   return (
     <div className="card" style={{ width: "18rem" }}>
-      <CardImage img={props.img} />
+      <CardImage img={img} />
       <CardBody
-        title={props.title}
-        text={props.text}
-        url={props.url}
+        title={title}
+        text={text}
+        url={url}
       />
     </div>
   );
