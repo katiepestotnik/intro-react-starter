@@ -1,14 +1,15 @@
-import React from 'react';
-import Card1 from './Card1'
-import Card2 from './Card2'
+import React from "react";
+import Card from './components/Card'
+import cardsArr from './cardData'
+const cards = cardsArr.map((ele, idx) => {
+  return <Card title={ele.title} text={ele.text} img={ele.img} url={ele.url} key={idx} />
+})
 export default function App() {
-
   return (
     <div className="App">
       <h1>Bootstrap Cards To Component Example</h1>
       <section className="cards">
-        <Card1 />
-        <Card2/>
+        {cards}
       </section>
     </div>
   );
